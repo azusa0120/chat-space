@@ -23,28 +23,21 @@ Things you may want to cover:
 
 * ...
 
-## groupsテーブル
+
+
+## comeentテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
-
-### Association
-- has_many :user, through: :members
-- has_many :messages　
-- has_many :members
-
-
-## messagesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|body|text|default:‘’|
-|image|string|default’’|
+|text|text|           |
+|image|text|           |
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :group
+
+
 
 ## membersテーブル
 
@@ -61,7 +54,10 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false, index: true|
+|name|string|null: false, index: true|
+|meil|text|null: false, index: true|
+|password|string|null: false, index: true|
+
 
 ### Association
 - has_many :groups, through: :members
