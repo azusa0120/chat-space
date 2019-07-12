@@ -30,7 +30,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :user, through: :members
-- has_many :messages
+- has_many :messages　
 - has_many :members
 
 
