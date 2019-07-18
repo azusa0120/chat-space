@@ -1,3 +1,19 @@
+@import "config/reset";
+@import "config/colors";
+@import"./font-awesome";
+@import "config/font-size";
+@import "mixins/mixin";
+@import "mixins/vendor_prefix";
+@import "modules/side_bar";
+@import "modules/chat";
+@import "messages/messages.scss";
+
+
+// @import "./side";
+// @import"./form";
+// @import"./user";
+// @import"./groups";
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +29,4 @@
  *= require_tree .
  *= require_self
  */
+ 
